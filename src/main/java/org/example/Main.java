@@ -60,7 +60,6 @@ public class Main {
         Enemy enemy1 = new Enemy("гоблин", weapon1, 60);
         player.attack(enemy1);
         System.out.println(enemy1.getHp());
-        //
     }
 }
 
@@ -665,5 +664,14 @@ class Game{
 
     public void hod(int x, int y, Player2 p){
         System.out.println("Игрок "+ p.getName()+" ставит "+p.getStep()+" на точку "+x+" "+y);
+        field[x][y] = p.getStep();
+    }
+
+    public void printfield(){
+        for(int i = 0; i<3;i++) {
+            for (int j = 0; j < 3; j++)
+                System.out.print(field[i][j]);
+            System.out.println();
+        }
     }
 }
