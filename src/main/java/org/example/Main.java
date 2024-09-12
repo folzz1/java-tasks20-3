@@ -60,6 +60,7 @@ public class Main {
         Enemy enemy1 = new Enemy("гоблин", weapon1, 60);
         player.attack(enemy1);
         System.out.println(enemy1.getHp());
+        //
     }
 }
 
